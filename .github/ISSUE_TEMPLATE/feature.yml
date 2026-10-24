@@ -1,0 +1,25 @@
+name: Small feature or change
+description: Plan one small change with AI.
+title: "[FEATURE-ID] "
+body:
+  - type: input
+    id: spec
+    attributes:
+      label: Feature and spec link
+      description: Give the feature ID and link to its Markdown description.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+      description: Describe one small outcome. Mention any agreed limits or decisions.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples to try
+      description: List a few actions or inputs and the results you expect.
+    validations:
+      required: true
